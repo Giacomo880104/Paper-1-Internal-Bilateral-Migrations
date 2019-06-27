@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for a LaTex article in English.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% AMS packages:
+\usepackage{amsmath, amsthm, amsfonts}
+
+% Theorems
+%-----------------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+
+% Shortcuts.
+% One can define new commands to shorten frequently used
+% constructions. As an example, this defines the R and Z used
+% for the real and integer numbers.
+%-----------------------------------------------------------------
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% Similarly, one can define commands that take arguments. In this
+% example we define a command for the absolute value.
+% -----------------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+% Operators
+% New operators must defined as such to have them typeset
+% correctly. As an example we define the Jacobian:
+% -----------------------------------------------------------------
+\DeclareMathOperator{\Jac}{Jac}
+
+%-----------------------------------------------------------------
+\title{Determinants of Internal Mobility in Italy: A Panel Data Analysis}
+\author{Giacomo Di Pasquale\\
+  \small Department of Politics and Economics\\
+  \small Claremont Graduate 
+}
+
+\begin{document}
+\maketitle
+
+\abstract{The paper investigates the effects that income inequality has on interregional migration flows in Italy. An instrumental approach is applied using bilateral migration flows for the period 2009-2016, to capture the effects of income inequality on internal mobility in Italy. The country has historically experienced a gap between the South (less developed) and North (more developed); the gap still exists, and the study analyzes how interregional migration evolved in the years following the crisis of 2007-2008. GDP per capita, unemployment and crime rate, and regional population are used as controls and contribute to indicate how their changes, together with different levels of inequality, push people out of their homes towards “better” regions. 
+A dynamic version of the model will be used to account for the presence of social networks, which play an important role with respect to the possibility people have to migrate.}
+
+\section{Introduction}
+
+Internal migration in Italy has experienced different trends. The first one, between 1950s and 1960s, was characterized by great outflows of people from the South to the North, mainly due by economic reasons and differences in unemployment rates (Salvatore, 1977). The second historic, big trend happened between the 1970s and 1990s and was characterized by the same levels of inequality across regions. The economic and financial crisis of 2007-2008 hit Italy strongly, but unevenly. More developed regions in the North reacted better and faster, compared to regions in the Center-South, which historically experienced lower levels of socio-economic development. The result is the exacerbation of already existing differences that lead people living in less developed regions to migrate towards those that offer better opportunities and where the redistribution of wealth is less uneven.
+
+If institutions and means are weaker in certain regions of a country, it is complicated to recover from a crisis and meet the needs of the population, extract resources, provide public goods, and redistribute. Moreover, as the state is weaker in these areas, this population becomes less relevant in political terms to the government, further decreasing the interest of the government to deliver any type of public good or to redistribute. As a result (if possible), people migrate. The aim of this paper is to provide empirical evidence about the determinants of internal mobility in Italy, with particular focus on regional levels of inequality. 
+This study differs from previous ones conducted on Italy. 
+The analysis of variables is conducted bilaterally. This is an important factor, as results show how people react differently to the same variable, according to whether they are in the origin region, or the destination. 
+
+\section{Theoretical Support}
+Since the unification of the country, in 1861, Italy has experienced the dualism between the North and the South. This historical gap between the two macro regions has always existed and it is still persistent. Through the whole 20th Century and the beginning of the 21st, there has been convergence between the two, but the difference is still evident. Interregional mobility in Italy experienced two main trends in the past: the first one, between 1950s and 1960s, was characterized by strong migration flows from the Southern regions, to the Northern ones. The rural-urban model developed by Harris and Todaro (1970) explains well the rationale of these migrations: the industrial development that characterized the Northwest of Italy increased labor supply, giving the opportunity to the people living in the South (which remained essentially rural) to see their labor demand satisfied.
+
+The second cycle of great interregional migrations characterized the Northeast and Center of Italy (as receivers) from the mid 1980s to the mid 1990s. Sending regions, once again, were the ones from the South, which experienced high levels of unemployment, mainly due to lack of jobs and state capacity (intended as the ability of local governments to provide services and opportunities), to the citizens (Faini et al., 1997). 
+The chance to migrate for people depends on different factors that literature has analyzed in multiple occasions: the presence of enough liquidity to afford the trip and the presence of social networks (family and friends) that could favor migration from a place to another (Faini et al., 1997).
+The financial crisis of 2007-2008 hit Italy strongly, as many other countries. Job losses have been the main consequence of the crisis, economically and socially. Unemployment rates remained almost constant at the beginning but increased dramatically in 2009-2010. The highest increases in unemployment characterized the South of Italy and mostly businesses like hotels, restaurants, construction,  in specific types of employment (involving consultancy and short-term contracts) and among small-scale entrepreneurs (small-business owners, craftsmen and the self-employed) (Italian Institute of Statistics, 2010). All the mentioned categories are characterized by the strong presence of young workers; as a consequence, after the crisis, unemployment rates for the youths (15-24 years old) in the South of Italy reached peaks of the 51.6\% (Eurostat, 2017). 
+
+Inequality between North and South, and among branches of the population that suffered the consequences of the crisis differently, might nudge an increase of interregional migration, involving those in search for better opportunities. This paper adds to the existing literature the study of inequality as a possible cause of migrations at the subnational level. 
+
+\section{Research Objective}
+This paper examines the effects of income inequality at the subnational level on migration flows in all the 20 regions in Italy. I argue that the unequal presence of income inequality across territories pushes people from poorer to richer regions of the country, exacerbating the already existing gap between richer and poorer areas. I look at these consequences and contribute to literature by examining the effects that income inequality and other important economic and demographic controls have over migration flows at the regional level.
+
+The central argument hypothesizes that higher inequality leads to more migration, given minimum levels of liquidity that allow people to migrate. This in turn has important consequences for the levels of income inequality and exacerbates differences in development between regions. Regions where social and economic development is higher are attractive to people and experience higher inflows of immigrants; regions where development is scarcely present will suffer lower redistribution and be prone to outflows of immigrants. 
+
+\section{Data and Methodology}
+Data for this paper mainly come from the Italian Institute of Statistics (ISTAT) and the European Institute of Statistics (Eurostat), which contain important information on the variables of interest in Italy at the regional level.
+
+The main purpose is to analyze the effect of inequality on migration flows at the regional level in Italy. Data on migration flows are provided by the Italian Institute of Statistics and consist of the number of people who enter and exit each region for each of the years analyzed (exclusively from and to the other regions of the country). 
+
+\subsection{The model}\label{sec:nothing}
+The empirical analysis for this paper is based on the work of Ivan Etzo (2011), which takes inspiration from the gravity model developed by Lowry (1966). Using yearly data on migration flows, each observation has double dimensions, spatial and temporal. Panel models take advantage of this double information and can account for eventual omitted variables and individual heterogeneity (Hsiao, 2003). 
+Specifically, this paper uses a Fixed Effect Vector Decomposition model (FEVD), developed my Plümper and Troeger (2007). The reason for the use of such model is because it allows the estimation of time-invariant variables and that it provides efficient estimates for variables that have very little within variance, making it more suitable that a simple Fixed Effect model. For instance, variables used in this paper are GDP per capita and population size, which vary considerably across regions but have a very low within variation (Etzo, 2011). The model used by Etzo in 2011 is the same one used here, with the exception that Etzo does not consider Inequality levels as one of the possible causes of interregional migrations in Italy. A list and brief description of the variables used in this model are provided: 
+\vspace{5mm} 
+\noindent
+\begin{description}
+\item  ${MF_i_j_t}$ = Migration Flows: inflows and outflows to and from each of the 20 Italian regions from 2009 to 2016; 
+\item  ${Ineq_i_j_t}$ = Inequality Indexes at Origin and Destination: index of inequality level in each of the 20 Italian regions considered both as senders and receivers of migrants, from 2009 to 2016;
+\item  ${UNR_i_j_t}$ = Unemployment Rate at Origin and Destination: level of unemployment in each of the 20 Italian regions considered both as senders and receivers of migrants, from 2009 to 2016;
+\item  ${Pop_i_j_t}$ = Population at Origin and Destination: number of residents in each of the in each of the 20 Italian regions considered both as senders and receivers of migrants, from 2009 to 2016;
+\item  ${GDP_i_j_t}$ = GDP at Origin and Destination: per capita net income in each of the in each of the 20 Italian regions considered both as senders and receivers of migrants, from 2009 to 2016;
+\item  ${CR_i_j_t}$ = Crime Rate at Origin and Destination: \textit{perception of crime} in the neighborhood for each of the 20 Italian regions considered both as senders and receivers of migrants, from 2009 to 2016;
+\item  ${D_i_j}$ = Distance between each of the 20 Italian regions. 
+\end{description}
+\vspace{5mm} 
+The model is expressed by the following econometric form:
+\vspace{5mm}  
+\begin{equation}
+ \hat{MF}_i_j_t = \hat{\beta}_0 + \hat{\beta}_1 ODInequality_i_j_t + \hat{\beta}_2 ODDemogr._i_j_t +
+ \hat{\beta}_3 ODDistance_i_j+ \hat{\epsilon}_i_t
+   \end{equation}
+   \vspace{5mm} 
+ \begin{itemize}
+  \item {$MF_{ijt}$: Net Migration Flows from i to j at time t;}
+  \item {$Inequality_{it}$: The three different indexes of Inequality used in the paper;}
+  \item {$Demogr._{it}$: The demographic controls above listed at time t, at the origin and the destination;}
+  \item {$Distance_{ij}$: Distance between origin and destination region.}
+    \end{itemize}
+
+
+
+ 
+
+
+
+
+
+
+
+
+\begin{equation}\label{eq:area}
+  S = \pi r^2
+\end{equation}
+One can refer to equations like this: see equation (\ref{eq:area}). One can also
+refer to sections in the same way: see section \ref{sec:nothing}. Or
+to the bibliography like this: \cite{Cd94}.
+
+\section{Results}
+The results of the preliminary analysis show negative correlation between income inequality at the origin and internal mobility and rate of unemployment at the origin and internal mobility, with a negative coefficient on two models that regresses net income inequality and rate of unemployment on state capacity, controlling for year and subnational effects. 
+
+There is also a negative relationship between distance and internal mobility. The higher the distance between regions, the less people tend to migrate. This effect can be related to the afore-mentioned lack of liquidity and lack of social networks.
+
+ \section{Conclusions}
+ The initial results provide some interesting insights. The negative effect that income inequality has on interregional mobility suggest that when the gap between rich and poor is too high, people migrate less. A possible interpretation is that the rich do not need to migrate and the poor cannot afford it. 
+To this respect, for future analysis, it would be interesting to analyze the first and ninth decile of the population, in terms of income level, and verify their effects on migrations. Unemployment gives the same indications as income inequality. When unemployment levels are very high, people migrate less. These results seem to confirm what previous literature reports about the importance of conditional cash transfers (Angelucci, M., 2011), social networks (Epstein, GS., 2004), and remittances (Garcia, A.I.L., 2018), with respect to mobility. 
+Results also suggest that distance is a factor in the evolution of migration trends. 
+
+Distances among Italian regions cannot be compared to the distances that characterize countries like the United States, China, or Russia. However, when it looks like that beyond the 571 kilometers threshold (355 miles), people tend to migrate less. This result confirms again the necessity to hold enough liquidity to move from one place to another and suggests that people tend to migrate to adjacent or close regions (Etzo, 2011). 
+GDP per capita seems to be negatively correlated with interregional mobility. The result is plausible but implying fair levels of income redistribution that are not captured by this variable. This could be an element for further analysis. 
+I will also work on the realization of a dynamic model, as anticipated in the introduction, in order to further control for social networks, regressing migration in the previous year on migration today (Etzo, 2011). 
+
+This paper analyzes a complicated period for the global and the Italian economies: the years after the financial crisis of 2007-2008. All the results obtained in this paper could be influenced by the uniqueness of the situation. In order to isolate the effect of the crisis, the model contains time and region-to-region fixed effects. However, I intend to gather data at the regional level for the years before the crisis, if possible. This would help to better isolate the effect of the crisis and provide more reliable results.
+Always with respect to the analysis carried out in the paper, one might argue that it would be better (from an economic research point of view) to analyze yearly changes, for the variables that allow it. This is an interesting perspective, as it would provide more information on how yearly changes in inequality, or unemployment rates, or GDP per capita affect interregional migrations in a given year, instead of just analyzing these variables in separate levels (years from 2009 to 2016). 
+
+
+
+% Bibliography
+%-----------------------------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem{Cd94} Author, \emph{Title}, Journal/Editor, (year)
+
+\end{thebibliography}
+
+\end{document}
